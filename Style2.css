@@ -83,7 +83,6 @@ footer{
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    height: 15%;
     width: 100%;
     bottom: 0;
     background-color: rgb(39, 39, 39);
