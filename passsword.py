@@ -70,9 +70,10 @@ def send_mfa_email(to_email: str, code: str):
 
     # Connect to Gmail's SMTP server
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
-        smtp.login("filecryptwoc@gmail.com", "xxxxxxxxxxxxx") #app password for email service from backend
+        smtp.login("filecryptwoc@gmail.com", "modo mvlx vxpc ifso") #app password for email service from backend
         smtp.send_message(msg)
 
 #__main__
-len=random.randint(20,40)
-send_mfa_email(to_email= "sayanrath2020@gmail.com",code=password(len))
+len=random.randint(16,20)
+#print(password(len))
+send_mfa_email(to_email= input("Enter your email: "),code=password(len))
